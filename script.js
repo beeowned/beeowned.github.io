@@ -153,9 +153,10 @@ function addListeners() {
     );
 
     showAdminMessage({
-      message: `Joined ${chan}`,
+      message: `Bem vindo ao Chat ${chan}`,
       timeout: 1000,
     });
+    removeAdminChatLine({ subtype: "connected" });
   });
 
   client.on("part", (channel, username, self) => {
