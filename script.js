@@ -299,8 +299,8 @@ function showMessage({
 
   if (timeout) {
     setTimeout(() => {
-      if (chatLine_.parentElement) {
-        chatLine_.classList.remove("visible");
+      if (chatLine_.parentElement) { // timeout remove chat lines
+        //chatLine_.classList.remove("visible");
         //setTimeout(() => chatEle.removeChild(chatLine_), 1000);
       }
     }, timeout);
