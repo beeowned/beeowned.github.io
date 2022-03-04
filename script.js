@@ -99,7 +99,7 @@ function addListeners() {
       attribs: { subtype: "connected" },
       timeout: 5000,
     });
-    removeAdminChatLine({ subtype: "Connected..." });
+    
     removeAdminChatLine({ subtype: "connecting" });
     removeAdminChatLine({ subtype: "disconnected" });
   });
