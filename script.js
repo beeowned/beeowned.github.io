@@ -212,7 +212,7 @@ function showMessage({
   type,
   message = "",
   data = {},
-  timeout = 0,//timeout = 3000,
+  timeout = 3000,
   attribs = {},
 } = {}) {
   let chatLine_ = document.createElement("div");
@@ -300,8 +300,8 @@ function showMessage({
   if (timeout) {
     setTimeout(() => {
       if (chatLine_.parentElement) {
-        chatLine_.classList.remove("visible");
-        setTimeout(() => chatEle.removeChild(chatLine_), 1000);
+        //chatLine_.classList.remove("visible");
+        //setTimeout(() => chatEle.removeChild(chatLine_), 1000);
       }
     }, timeout);
   }
