@@ -300,7 +300,7 @@ function showMessage({
   if (timeout) {
     setTimeout(() => {
       if (chatLine_.parentElement) { // timeout remove chat lines
-        //chatLine_.classList.remove("visible");
+        chatLine_.classList.remove("visible");
         //setTimeout(() => chatEle.removeChild(chatLine_), 1000);
       }
     }, timeout);
