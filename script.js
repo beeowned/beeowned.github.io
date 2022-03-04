@@ -170,16 +170,16 @@ function addListeners() {
     });
   });
 
-  /*client.on("clearchat", (channel) => {
+  client.on("clearchat", (channel) => {
     removeChatLine({ channel });
   });
 
   client.on("timeout", (channel, username) => {
     removeChatLine({ channel, username });
   });
-}*/
+}
 
-/*function removeChatLine(params = {}) {
+function removeChatLine(params = {}) {
   if ("channel" in params) {
     params.channel = getChan(params.channel);
   }
@@ -192,7 +192,7 @@ function addListeners() {
 function removeAdminChatLine(params = {}) {
   params.type = "admin";
   removeChatLine(params);
-}*/
+}
 
 function showAdminMessage(opts) {
   opts.type = "admin";
@@ -212,7 +212,8 @@ function showMessage({
   type,
   message = "",
   data = {},
-  timeout = 3000,
+  timeout = 0,
+  //timeout = 3000,
   attribs = {},
 } = {}) {
   let chatLine_ = document.createElement("div");
