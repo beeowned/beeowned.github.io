@@ -170,9 +170,9 @@ function addListeners() {
     });
   });
 
-  client.on("clearchat", (channel) => {
+  /*client.on("clearchat", (channel) => {
     removeChatLine({ channel });
-  });
+  });*/
 
   client.on("timeout", (channel, username) => {
     removeChatLine({ channel, username });
